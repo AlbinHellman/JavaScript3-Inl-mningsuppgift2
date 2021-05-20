@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './components/test/test.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { CvComponent } from './views/cv/cv.component';
+import { PersonligtbrevComponent } from './views/personligtbrev/personligtbrev.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    NavbarComponent
+    NavbarComponent,
+    CvComponent,
+    PersonligtbrevComponent
   ],
   imports: [
     BrowserModule,
