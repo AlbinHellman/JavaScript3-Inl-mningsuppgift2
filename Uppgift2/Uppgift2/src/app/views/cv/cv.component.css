@@ -28,3 +28,22 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.3rem;
 }
+
+.blåtext p {
+    margin: 0 auto;
+    width: 40rem;
+    padding-top: 3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(92, 92, 241);
+}
+
+.text2 {
+    margin: 0 auto;
+    width: 40rem;
+    padding-top: 3rem;
+
+}
+
+
+
