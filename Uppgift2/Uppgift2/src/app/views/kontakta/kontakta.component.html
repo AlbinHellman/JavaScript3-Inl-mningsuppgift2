@@ -1,0 +1,15 @@
+
+<div class="container">
+    <form name="form" #f="ngForm" novalidate>
+        <div class="form-group">
+            <label for="firstName">Förnamn</label>
+            <input type="text" class="form-control" [(ngModel)]="model.firstName" #firstName=""
+            name="firstName" required />
+            <div class="invalid-feedback">
+                <div>Du måste välja ett förnamn</div>
+            </div>
+ 
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

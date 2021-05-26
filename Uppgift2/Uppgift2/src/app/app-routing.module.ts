@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PersonligtbrevComponent } from './views/personligtbrev/personligtbrev.component';
 import { CvComponent } from './views/cv/cv.component';
+import { KontaktaComponent } from './views/kontakta/kontakta.component';
 
 const routes: Routes = [
   { path: '', component: CvComponent },
-  { path: 'personligtbrev', component: PersonligtbrevComponent }
+  { path: 'personligtbrev', component: PersonligtbrevComponent },
+  { path: 'kontakta', component: KontaktaComponent }
 ];
 
 @NgModule({
