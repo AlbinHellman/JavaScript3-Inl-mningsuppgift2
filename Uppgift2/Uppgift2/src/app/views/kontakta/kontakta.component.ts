@@ -13,4 +13,8 @@ model:any = {}
   ngOnInit(): void {
   }
 
+  onSubmit() {
+    alert(JSON.stringify(this.model))
+  }
+
 }
