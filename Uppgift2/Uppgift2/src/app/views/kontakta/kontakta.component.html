@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-6">
         <div class="jumbotron">
-    <form name="form" #f="ngForm" novalidate>
+    <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
         <div class="form-group">
             <label for="firstName">Förnamn</label>
             <input type="text" class="form-control" [(ngModel)]="model.firstName" #firstName="ngModel"
@@ -22,7 +22,7 @@
         </div>
             
         <div class="form-group">
-            <label for="lastName">Email</label>
+            <label for="email">Email</label>
             <input type="text" class="form-control" [(ngModel)]="model.email" #email="ngModel" 
             [ngClass]="{'is-invalid':f.submitted && email.invalid}" name="email" required email />
             <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
@@ -31,7 +31,27 @@
             </div>
         </div>
         <div class="form-group">
-        <button class="btn btn-primary">Submit</button>
+            <label for="subject">Ämne</label>
+            <input type="text" class="form-control" [(ngModel)]="model.subject" #subject="ngModel" 
+            [ngClass]="{'is-invalid':f.submitted && subject.invalid}" name="subject" required
+            minlength="2" />
+            <div *ngIf="f.submitted && subject.invalid" class="invalid-feedback">
+                <div *ngIf="subject.errors!.required">Du måste välja ett Ämne</div>
+                <div *ngIf="subject.errors!.minlength">Ämnet måste innehålla minst två bokstäver</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="subject">Meddelande</label>
+            <input type="text" class="form-control" [(ngModel)]="model.message" #message="ngModel" 
+            [ngClass]="{'is-invalid':f.submitted && message.invalid}" name="message" required
+            minlength="2" />
+            <div *ngIf="f.submitted && message.invalid" class="invalid-feedback">
+                <div *ngIf="message.errors!.required">Du måste skriva ett meddelande</div>
+                <div *ngIf="message.errors!.minlength">Meddelandet måste innehålla minst två bokstäver</div>
+            </div>
+        </div>
+        <div class="form-group">
+        <button class="btn mt-3">Submit</button>
         </div>
        
     </form>
