@@ -76,7 +76,7 @@
     
     position: absolute;
     bottom: 10.6rem;
-    left: 78rem;
+    left: 93rem;
     text-align: right;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -88,7 +88,7 @@
 .körkort {
     position: absolute;
     bottom: 9rem;
-    left: 78rem;
+    left: 93rem;
 }
 
 .nummer2 {
@@ -102,7 +102,7 @@
 .referenser2 {
     position: absolute;
     bottom: 3rem;
-    left: 79rem;
+    left: 94rem;
 }
 
 .nummer3 {
@@ -113,8 +113,8 @@
 
 .referenser3 {
     position: absolute;
-    top: 40rem;
-    right: 76.5rem;
+    top: 53rem;
+    right: 85.5rem;
     
 }
 
