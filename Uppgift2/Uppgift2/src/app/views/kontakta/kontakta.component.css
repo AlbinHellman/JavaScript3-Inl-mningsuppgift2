@@ -1,3 +1,8 @@
 input.ng-touched.ng-invalid {
     border:1px solid red;
 }
+
+.container {
+    position: relative;
+    left: 16rem;
+}
