@@ -37,25 +37,27 @@
             minlength="2" />
             <div *ngIf="f.submitted && subject.invalid" class="invalid-feedback">
                 <div *ngIf="subject.errors!.required">Du måste välja ett Ämne</div>
-                <div *ngIf="subject.errors!.minlength">Ämnet måste innehålla minst två bokstäver</div>
+                <div *ngIf="subject.errors!.minlength">Ämnet måste innehålla minst två tecken</div>
             </div>
         </div>
         <div class="form-group">
             <label for="message">Meddelande</label>
-            <input style="height:10rem" type="text" class="form-control" [(ngModel)]="model.message" #message="ngModel" 
-            [ngClass]="{'is-invalid':f.submitted && message.invalid}" name="message" required
-            minlength="2" />
-            <div *ngIf="f.submitted && message.invalid" class="invalid-feedback">
-                <div *ngIf="message.errors!.required">Du måste skriva ett meddelande</div>
-                <div *ngIf="message.errors!.minlength">Meddelandet måste innehålla minst två bokstäver</div>
-            </div>
-        </div>
-        <div class="form-group">
-        <button class="btn mt-3">Submit</button>
-        </div>
-       
-    </form>
-</div>
+            <!--Material textarea-->
+<div class="md-form md-outline">
+    <textarea type="text" id="form75" class="form-control md-textarea" rows="3" mdbInput [(ngModel)]="model.message" #message="ngModel" 
+    [ngClass]="{'is-invalid':f.submitted && message.invalid}" name="message" required
+    minlength="2" ></textarea>
+    <div *ngIf="f.submitted && message.invalid" class="invalid-feedback">
+        <div *ngIf="message.errors!.required">Du måste skriva ett meddelande</div>
+        <div *ngIf="message.errors!.minlength">Meddelandet måste innehålla minst två tecken</div>
     </div>
+</div>
+</div>
+<div class="form-group">
+    <button class="btn mt-3">Submit</button>
+</div>
+</form>
+</div>
+</div>
 </div>
 </div>
