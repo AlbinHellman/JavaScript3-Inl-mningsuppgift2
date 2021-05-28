@@ -41,8 +41,8 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="subject">Meddelande</label>
-            <input type="text" class="form-control" [(ngModel)]="model.message" #message="ngModel" 
+            <label for="message">Meddelande</label>
+            <input style="height:10rem" type="text" class="form-control" [(ngModel)]="model.message" #message="ngModel" 
             [ngClass]="{'is-invalid':f.submitted && message.invalid}" name="message" required
             minlength="2" />
             <div *ngIf="f.submitted && message.invalid" class="invalid-feedback">
