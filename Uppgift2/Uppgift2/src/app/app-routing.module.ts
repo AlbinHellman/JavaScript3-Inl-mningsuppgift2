@@ -5,8 +5,8 @@ import { CvComponent } from './views/cv/cv.component';
 import { KontaktaComponent } from './views/kontakta/kontakta.component';
 
 const routes: Routes = [
-  { path: '', component: CvComponent },
-  { path: 'personligtbrev', component: PersonligtbrevComponent },
+  { path: '', component: PersonligtbrevComponent },
+  { path: 'cv', component: CvComponent },
   { path: 'kontakta', component: KontaktaComponent }
 ];
 
